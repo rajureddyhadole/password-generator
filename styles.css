@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --primary-color: #2b5876;
+    --secondary-color: #4e4376;
+    --weak-color: #fc8181;
+    --medium-color: #fbd38d;
+    --strong-color: #68d391;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.password-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+    padding: 0 1rem 0 0;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+#password {
+    width: 100%;
+    padding: 1.1rem;
+    padding-right: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+#copy-btn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    /* background-color: #eee; */
+    margin-left: 1rem;
+    color: #888;
+    transition: color 0.2s ease;
+}
+
+#copy-btn:hover {
+    color: #333;
+}
+
+#copy-btn:active {
+    color: #888;
+}
